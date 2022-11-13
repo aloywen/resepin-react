@@ -4,7 +4,7 @@ This project uses the following technologies:
 
 - [React](https://reactjs.org) 
 - [TailwindCSS](https://tailwindcss.com/) 
-- [React Router v5](https://reactrouter.com/)
+- [React Router v6](https://reactrouter.com/)
 
 
 ## Quick Start
