@@ -30,10 +30,9 @@ export default function Index() {
 
   }, [])
 
-  // console.log('loading:', loading);
   return (
     <div>
-      <p className='font-primary mt-44 ml-4 text-xl md:text-4xl font-semibold mb-7 dark:text-amber-100'>Rekomendasi Buat Kamu</p>
+      <p className='font-primary ml-4 text-xl md:text-4xl font-semibold mb-7 dark:text-amber-100'>Rekomendasi Buat Kamu</p>
       <div className='flex flex-wrap gap-6 justify-center pb-10'>
         {data.results?.map((data) => (
           <div

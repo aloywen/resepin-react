@@ -1,5 +1,4 @@
 import { useEffect, useState } from 'react'
-import Navbar from '../Navbar'
 import { useNavigate } from 'react-router-dom'
 
 export default function Index() {
@@ -53,9 +52,8 @@ export default function Index() {
 
     return (
         <div>
-            <Navbar />
 
-            <p className='font-primary mt-44 md:mt-44 ml-4 text-xl md:text-4xl font-semibold mb-7 dark:text-amber-100'></p>
+            <p className='font-primary ml-4 text-xl md:text-4xl font-semibold mb-7 dark:text-amber-100'></p>
             <div className='flex flex-wrap gap-6 justify-center pb-10'>
                 {data?.map((data) => (
                     <div

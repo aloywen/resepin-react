@@ -1,10 +1,9 @@
 import { useState, useEffect } from 'react'
-import Navbar from '../Navbar'
 import { useNavigate } from 'react-router-dom'
 
 export default function Index() {
     const [q, setQ] = useState("")
-    const [search, setSearch] = useState("")
+    const [search, setSearch] = useState("wkwkwkw")
     const [limit, setLimit] = useState(4)
     const [isError, setIsError] = useState(false);
     const [loading, setLoading] = useState(true);
@@ -36,7 +35,6 @@ export default function Index() {
 
     return (
         <div>
-            <Navbar />
 
             <div className='mt-44 flex justify-center gap-5'>
                 <input

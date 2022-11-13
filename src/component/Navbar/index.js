@@ -26,9 +26,11 @@ export default function Index() {
     }, [])
 
     return (
-        <div className="relative mb-36">
-            <div className="fixed top-0 left-0 right-0">
-                <Link to='/' className="dark:bg-primary bg-nav flex justify-center items-center py-3">
+        <div className="relative mb-10">
+            <div className="sticky top-0">
+                <Link to='/'
+                    onClick={() => setInitMenu('')}
+                    className="dark:bg-primary bg-nav flex justify-center items-center py-3">
                     <img alt="logo" src="https://img.icons8.com/doodle/50/000000/ingredients.png" width={60} height={60} />
                     <p className="text-3xl font-semibold font-primary">Rêsepin</p>
                 </Link>
@@ -41,7 +43,8 @@ export default function Index() {
                         <Link to='/category'
                             onClick={() => setInitMenu('kategori')}
                             className={`${initMenu === 'kategori' ? 'text-black' : 'text-primary'} dark:text-nav font-semibold text-lg md:text-4xl font-primary`}>Kategori</Link>
-                        <Link to='/search'>
+                        <Link to='/search'
+                            onClick={() => setInitMenu('')}>
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth="1.5" stroke="currentColor" className="w-8 h-8 md:mt-1">
                                 <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 15.75l-2.489-2.489m0 0a3.375 3.375 0 10-4.773-4.773 3.375 3.375 0 004.774 4.774zM21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>

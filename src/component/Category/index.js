@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react'
-import { Navbar, Footer } from '../index'
+import { Footer } from '../index'
 import { useNavigate, useLocation } from 'react-router-dom'
 import { category } from '../../utils'
 
@@ -57,9 +57,8 @@ export default function Index() {
 
     return (
         <div>
-            <Navbar />
 
-            <div className='mt-44 flex overflow-x-auto md:flex-wrap gap-4 pb-8 md:justify-center'>
+            <div className=' flex overflow-x-auto md:flex-wrap gap-4 pb-8 md:justify-center'>
                 {category?.map((data) => (
                     <button
                         key={data.key}

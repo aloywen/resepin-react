@@ -6,8 +6,8 @@ export default function Index() {
     const router = useNavigate()
 
     return (
-        <div>
-            <p className='font-primary mt-2 ml-2 text-xl md:text-4xl font-semibold mb-7 dark:text-amber-100'>Coba Cari Berdasarkan Kategori</p>
+        <div className='mb-32'>
+            <p className='font-primary mt-10 ml-2 text-xl md:text-4xl font-semibold mb-7 dark:text-amber-100'>Coba Cari Berdasarkan Kategori</p>
             <div className='mt-10 flex overflow-x-auto md:flex-wrap gap-4 pb-8 md:justify-center'>
                 {category?.map((data) => (
                     <button
