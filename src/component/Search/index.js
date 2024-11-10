@@ -14,7 +14,7 @@ export default function Index() {
         const fetchData = async () => {
             try {
                 setLoading(true)
-                let response = await fetch(`https://masak-apa-tomorisakura.vercel.app/api/search/?q=${search}`);
+                let response = await fetch(`https://resep-hari-ini.vercel.app/api/search/?q=${search}`);
                 if (response.status === 200) {
                     let data = await response.json();
                     setSearch(data);

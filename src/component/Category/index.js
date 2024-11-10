@@ -17,7 +17,7 @@ export default function Index() {
     const loadMore = async () => {
         setLoading(true)
         try {
-            let response = await fetch(`https://masak-apa-tomorisakura.vercel.app/api/category/recipes/${cat}/${start}`);
+            let response = await fetch(`https://resep-hari-ini.vercel.app/api/category/recipes/${cat}/${start}`);
             if (response.status === 200) {
                 const newData = await response.json()
                 setStart(start + 1)
@@ -35,7 +35,7 @@ export default function Index() {
 
         const fetchData = async () => {
             try {
-                let response = await fetch(`https://masak-apa-tomorisakura.vercel.app/api/category/recipes/${initialCat === null ? cat : initialCat}`);
+                let response = await fetch(`https://resep-hari-ini.vercel.app/api/category/recipes/${initialCat === null ? cat : initialCat}`);
                 setLoading(true)
                 if (response.status === 200) {
                     let data = await response.json();

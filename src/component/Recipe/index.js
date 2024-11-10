@@ -13,7 +13,7 @@ export default function Index() {
     const loadMore = async () => {
         setLoading(true)
         try {
-            let response = await fetch(`https://masak-apa-tomorisakura.vercel.app/api/recipes/${start}`);
+            let response = await fetch(`https://resep-hari-ini.vercel.app/api/recipes/${start}`);
             if (response.status === 200) {
                 const newData = await response.json()
                 setStart(start + 1)
